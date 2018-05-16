@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isopods", "Assembly-CSharp.csproj", "{552F9AC2-2C14-128F-9946-93DCD8625B9B}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isopods", "Isopods.csproj", "{72E9C6E5-5A38-AF23-F74B-23DD96D60E52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{552F9AC2-2C14-128F-9946-93DCD8625B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{552F9AC2-2C14-128F-9946-93DCD8625B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{552F9AC2-2C14-128F-9946-93DCD8625B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{552F9AC2-2C14-128F-9946-93DCD8625B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E9C6E5-5A38-AF23-F74B-23DD96D60E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E9C6E5-5A38-AF23-F74B-23DD96D60E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E9C6E5-5A38-AF23-F74B-23DD96D60E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E9C6E5-5A38-AF23-F74B-23DD96D60E52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
