@@ -300,9 +300,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bazookaRotationSpeed: 16
-  projectileSpeed: 250
-  projectile: {fileID: 1156329636035416, guid: 64300e6b29490894f9e410886ac4b512, type: 2}
-  ammo: 5
+  _projectileSpeed: 268
+  _projectile: {fileID: 1156329636035416, guid: 64300e6b29490894f9e410886ac4b512,
+    type: 2}
+  _ammo: 5
+  _timeBetweenShots: 1.5
 --- !u!1 &70777991
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
+  _health: 0
 --- !u!212 &271746524
 SpriteRenderer:
   m_ObjectHideFlags: 0

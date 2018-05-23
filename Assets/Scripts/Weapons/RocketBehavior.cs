@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class RocketBehavior : MonoBehaviour
 {
-    // Use this for initialization
-    void Start()
-    {
-        
-    }
-    
+    private float _timeToLive = WEAPON.ROCKET_TIME_TO_LIVE;
+
     void Update()
     {
-        
+        _timeToLive -= Time.deltaTime;
+        if (_timeToLive <= 0.0f)
+            Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D other)

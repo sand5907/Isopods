@@ -6,7 +6,10 @@ public class EnemyBehavior : MonoBehaviour, IDamageable
 {
     public float rotationSpeed = 5.0f;
     private Transform target;
-    public float health { get; set; }
+
+    [SerializeField]
+    private float _health;
+    public float health { get { return _health; } private set { _health = value; } }
 
     
     // Use this for initialization
