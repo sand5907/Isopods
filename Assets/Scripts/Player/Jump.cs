@@ -72,13 +72,5 @@ public class Jump : MonoBehaviour
                     cycle++;
             */
         }
-        
-
-
-
-
-
-        }
-
-
+    }
 }
