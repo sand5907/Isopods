@@ -14,6 +14,10 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+<<<<<<< HEAD
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+=======
+>>>>>>> master
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.4.1f1</UnityVersion>
@@ -235,12 +239,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AimAtPlayer.cs" />
-    <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\Constants\Constants.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\Enemy\MoveBackAndForth.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\NPC\NPC_Dialogue.cs" />
+=======
+    <Compile Include="Assets\Scripts\Interfaces\ILaunchable.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IShootable.cs" />
+    <Compile Include="Assets\Scripts\Player\Jump.cs" />
+>>>>>>> 7f99d6e20c68c025ba56e0152a40eae436530b4f
     <Compile Include="Assets\Scripts\Player\Move.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bazooka.cs" />
     <Compile Include="Assets\Scripts\Weapons\RocketBehavior.cs" />

@@ -6,7 +6,11 @@ TagManager:
   tags:
   - ground
   - Enemy
+<<<<<<< HEAD
   - Flag
+=======
+  - Rocket
+>>>>>>> 7f99d6e20c68c025ba56e0152a40eae436530b4f
   layers:
   - Default
   - TransparentFX
