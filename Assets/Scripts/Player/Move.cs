@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Move : MonoBehaviour
 {
@@ -12,21 +13,29 @@ public class Move : MonoBehaviour
     public bool facingRight = true; 
 
     //Not grounded
-    bool grounded = false;
-
-    public bool jumped = false;
+    private bool grounded = false;
 
     //Checks if player is on ground
     public Transform groundCheck; 
 
     //how big circle is to check if grounded
-    float groundRadius = 0.4f;
+    private float groundRadius = 0.4f;
 
     //Force of jump
     public float jumpForce = 700f;
 
     //What Layer is ground
     public LayerMask whatIsGround;
+
+    public string PlayerCollidingTag;
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag(PlayerCollidingTag))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
 
 
     private void FixedUpdate() //Physics is fixed
@@ -48,10 +57,8 @@ public class Move : MonoBehaviour
 
     private void Update()
     {
-        jumped = false;
         if (grounded && Input.GetKeyDown(KeyCode.Space))
         {
-            jumped = true;
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
         }
     }

@@ -240,9 +240,8 @@
     <Compile Include="Assets\Scripts\Enemy\MoveBackAndForth.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
-    <Compile Include="Assets\Scripts\Player\Jump.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPC_Dialogue.cs" />
     <Compile Include="Assets\Scripts\Player\Move.cs" />
-    <Compile Include="Assets\Scripts\Player\NewFollow.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bazooka.cs" />
     <Compile Include="Assets\Scripts\Weapons\RocketBehavior.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
