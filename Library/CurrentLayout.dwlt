@@ -41,9 +41,15 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1920
     height: 947
   m_MinSize: {x: 683, y: 492}
+=======
+    width: 964
+    height: 722
+  m_MinSize: {x: 681, y: 492}
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
     width: 964
     height: 722
@@ -118,9 +124,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 573
     width: 1531
     height: 374
+=======
+    y: 437
+    width: 687
+    height: 285
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
     y: 437
     width: 687
@@ -132,9 +144,14 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 18}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 13}
   m_Selected: 1
   m_LastSelected: 0
+=======
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
   m_Selected: 0
   m_LastSelected: 1
@@ -222,9 +239,15 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1531
     height: 947
   m_MinSize: {x: 406, y: 492}
+=======
+    width: 687
+    height: 722
+  m_MinSize: {x: 404, y: 492}
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
     width: 687
     height: 722
@@ -351,17 +374,23 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/enemies
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/enemies
 =======
+=======
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
     - Assets/Art/Enemies
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Art/Enemies
+<<<<<<< HEAD
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
+=======
 >>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Scott\Workspace\Isopods
@@ -369,9 +398,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 70280000
     m_LastClickedID: 10352
     m_ExpandedIDs: 00000000ec27000000280000822c000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 0e2e0000
+    m_LastClickedID: 11790
+    m_ExpandedIDs: 000000000a2e00000c2e0000fe2e0000102f0000d831000000ca9a3bffffff7f
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
     m_SelectedIDs: 0e2e0000
     m_LastClickedID: 11790
@@ -459,7 +494,11 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 73}
     m_GridSize: 64
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_DirectoriesAreaWidth: 257
+=======
+  m_DirectoriesAreaWidth: 565
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
   m_DirectoriesAreaWidth: 565
 >>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
@@ -529,7 +568,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: a266f2ff3e73f5ff5a76f5ff9e7bf5ffac7ff5fffec6fbff8cd1fbffb0d1fbffb2d1fbff4edefbff50defbff7412feff5263ffff3a78ffffae8affffb08affff668fffff52c0ffff4ad1ffff5cd1ffffc4d2ffff9efbffff0000000016310000723100008a310000f0310000f4310000d64e0000124f0000324f0000564f0000ba4f0000be4f0000
+=======
+    m_ExpandedIDs: e20cfeff1211feffa6ceffffc0ceffff02cfffff00000000fc30000036310000483100005a310000623100007231000096310000fa4c0000144d0000504d0000
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
     m_ExpandedIDs: e20cfeff1211feffa6ceffffc0ceffff02cfffff00000000fc30000036310000483100005a310000623100007231000096310000fa4c0000144d0000504d0000
 >>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
@@ -589,9 +632,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 8.324029, y: -1.7424268, z: 9.34375}
     speed: 2
     m_Value: {x: 8.324029, y: -1.7424268, z: 9.34375}
+=======
+    m_Target: {x: 6.0099983, y: 2.4850006, z: 0}
+    speed: 2
+    m_Value: {x: 6.0099983, y: 2.4850006, z: 0}
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
     m_Target: {x: 6.0099983, y: 2.4850006, z: 0}
     speed: 2
@@ -625,9 +674,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 64.75486
     speed: 2
     m_Value: 64.75486
+=======
+    m_Target: 234.7145
+    speed: 2
+    m_Value: 234.7145
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
     m_Target: 234.7145
     speed: 2

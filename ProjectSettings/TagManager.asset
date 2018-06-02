@@ -8,7 +8,10 @@ TagManager:
   - Enemy
   - Flag
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Snail
+=======
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
 =======
 >>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
   layers:
@@ -21,15 +24,21 @@ TagManager:
   - 
   - 
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Ground
   - BelowWater
   - Isopods
   - Snail
 =======
+=======
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
   - Isopod
   - Ground
   - 
   - 
+<<<<<<< HEAD
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
+=======
 >>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
   - 
   - 
