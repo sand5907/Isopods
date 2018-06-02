@@ -238,6 +238,7 @@
     <Compile Include="Assets\Scripts\Constants\Constants.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\Enemy\MoveBackAndForth.cs" />
+    <Compile Include="Assets\Scripts\Enemy\MoveUntilGap.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ILaunchable.cs" />
@@ -268,6 +269,7 @@
   <ItemGroup>
     <None Include="Assets\Art\Enemies\enemies_spritesheet.txt" />
     <None Include="Assets\Art\Items\items_spritesheet.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\Level2.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\isopods.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\License.txt" />

@@ -7,16 +7,17 @@ using UnityEngine.SceneManagement;
 public class Move : MonoBehaviour
 {
     //Movement speed
-    public float topSpeed = 10f; 
+    public float topSpeed = 10f;
 
     //direction
-    public bool facingRight = true; 
+    public bool facingRight = true;
 
     //Not grounded
     private bool grounded = false;
+    private bool snailed = false;
 
     //Checks if player is on ground
-    public Transform groundCheck; 
+    public Transform groundCheck;
 
     //how big circle is to check if grounded
     private float groundRadius = 0.4f;
@@ -26,6 +27,7 @@ public class Move : MonoBehaviour
 
     //What Layer is ground
     public LayerMask whatIsGround;
+    public LayerMask whatIsSnail;
 
     public string PlayerCollidingTag;
 
@@ -37,12 +39,17 @@ public class Move : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        //Ignores below water layer
+        Physics2D.IgnoreLayerCollision(10, 9);
+    }
 
     private void FixedUpdate() //Physics is fixed
     {
         //is the player grounded?
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-
+        snailed = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsSnail);
         //get move direction
         float move = Input.GetAxis("Horizontal");
 
@@ -57,9 +64,12 @@ public class Move : MonoBehaviour
 
     private void Update()
     {
-        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            if (grounded)
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            else if (snailed)
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce * 1.6f));
         }
     }
 

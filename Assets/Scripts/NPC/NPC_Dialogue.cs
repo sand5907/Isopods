@@ -14,7 +14,7 @@ public class NPC_Dialogue : MonoBehaviour
     {
         message = GameObject.Find("Message").GetComponent<Text>();
 
-        message.text = "";
+        // message.text = "";
     }
 
     void OnTriggerEnter2D(Collider2D other)

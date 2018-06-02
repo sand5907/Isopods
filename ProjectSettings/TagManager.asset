@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Rocket
+  - Enemy
+  - Flag
+<<<<<<< HEAD
+  - Snail
+=======
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
   layers:
   - Default
   - TransparentFX
@@ -14,10 +20,17 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
+  - Ground
+  - BelowWater
+  - Isopods
+  - Snail
+=======
+  - Isopod
+  - Ground
   - 
   - 
-  - 
-  - 
+>>>>>>> dee2cb52ce095721a25c812dea95fc4cc085c156
   - 
   - 
   - 

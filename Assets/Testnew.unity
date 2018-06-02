@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 20869993}
   - component: {fileID: 20869992}
   - component: {fileID: 20869994}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ MonoBehaviour:
   jumpForce: 4000
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   PlayerCollidingTag: Flag
 --- !u!1 &25578189
 GameObject:
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 25578192}
   - component: {fileID: 25578191}
   - component: {fileID: 25578194}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: Bazooka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70777992}
   - component: {fileID: 70777993}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Alchemist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 205426968}
   - component: {fileID: 205426965}
   - component: {fileID: 205426966}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: third
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,23 +520,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1173433821711814, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1325665522139144, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1471372051131878, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1787249053444876, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1414575663334048, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1318057877289148, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
@@ -544,23 +544,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1331003567732930, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1795465787991472, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1625664407010178, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1341096457654370, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1431353799670216, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1829846137942650, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
@@ -568,7 +568,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1444107529146500, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1471372051131878, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -577,6 +577,18 @@ Prefab:
     - target: {fileID: 1471372051131878, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
       propertyPath: m_TagString
       value: Flag
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499921499672760, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303806283300672, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055919259708318, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
@@ -790,7 +802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 283365274}
   - component: {fileID: 283365275}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Warrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,6 +898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
+  _health: 0
 --- !u!212 &575494434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1051,7 +1064,7 @@ GameObject:
   - component: {fileID: 842202590}
   - component: {fileID: 842202589}
   - component: {fileID: 842202587}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: fourth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1163,7 +1176,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1034240194}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Following Isopods
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,7 +1445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350971289}
   - component: {fileID: 1350971290}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Medic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1507,7 +1520,7 @@ GameObject:
   - component: {fileID: 1619351772}
   - component: {fileID: 1619351771}
   - component: {fileID: 1619351775}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: second
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1589,7 +1602,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1632805678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RocketSpawnLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1630,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1858121835}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -1631,7 +1644,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1858121834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 283365274}
@@ -1645,7 +1658,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1923190661}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Isopods
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1785,7 +1798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981606402}
   - component: {fileID: 1981606403}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Protector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
