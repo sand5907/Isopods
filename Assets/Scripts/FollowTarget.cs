@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Isopods.Constants;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ public class FollowTarget : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        target = GameObject.FindGameObjectWithTag(PLAYER_CONST.PLAYER_TAG).transform;
     }
 
     // Update is called once per frame

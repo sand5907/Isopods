@@ -6,7 +6,10 @@ namespace Isopods.Interfaces
     {
         int ammo { get; set; }
         float timeBetweenShots { get; set; }
+        float reloadTime { get; }
+        bool reloading { get; }
 
-         void Shoot();
+        void Shoot();
+        IEnumerator Reload();
     }
 }

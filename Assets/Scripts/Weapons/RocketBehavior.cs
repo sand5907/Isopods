@@ -1,10 +1,10 @@
 ﻿using Isopods.Interfaces;
-using WEAPON = Isopods.Constants.WEAPON_CONST;
+using ROCKET = Isopods.Constants.WEAPON_CONST.ROCKET_CONSTANTS;
 using UnityEngine;
 
 public class RocketBehavior : MonoBehaviour
 {
-    private float _timeToLive = WEAPON.ROCKET_TIME_TO_LIVE;
+    private float _timeToLive = ROCKET.ROCKET_TIME_TO_LIVE;
 
     void Update()
     {
@@ -18,7 +18,7 @@ public class RocketBehavior : MonoBehaviour
         if(other.gameObject.GetComponent<IDamageable>() != null)
         {
             Destroy(gameObject);
-            other.GetComponent<IDamageable>().TakeDamage(WEAPON.DEFAULT_ROCKET_DAMAGE);
+            other.GetComponent<IDamageable>().TakeDamage(ROCKET.DEFAULT_ROCKET_DAMAGE);
         }
     }
 }

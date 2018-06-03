@@ -1,44 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
+using Isopods.Constants;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+
+using PLAYER = Isopods.Constants.PLAYER_CONST;
 
 public class Move : MonoBehaviour
 {
+    //direction
+    private bool playerFacingRight = true;
     //Movement speed
     public float topSpeed = 10f;
 
     //direction
     public bool facingRight = true;
 
-    //Not grounded
-    private bool grounded = false;
-    private bool snailed = false;
+    private bool playerOnGround = false;
+    private bool playerOnSnail = false;
 
-    //Checks if player is on ground
-    public Transform groundCheck;
-
-    //how big circle is to check if grounded
-    private float groundRadius = 0.4f;
-
-    //Force of jump
-    public float jumpForce = 700f;
-
-    //What Layer is ground
-    public LayerMask whatIsGround;
-    public LayerMask whatIsSnail;
-
-    public string PlayerCollidingTag;
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag(PlayerCollidingTag))
+        if (col.CompareTag(LEVEL_CONST.END_LEVEL_FLAG_TAG))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == LEVEL_CONST.GROUND_TAG)
+        {
+            playerOnGround = true;
+            playerOnSnail = false;
+        }
+        else if (collision.gameObject.tag == ENEMY_CONST.SNAIL_TAG)
+        {
+            playerOnGround = false;
+            playerOnSnail = true;
+        }
+    }
     private void Start()
     {
         //Ignores below water layer
@@ -47,18 +47,15 @@ public class Move : MonoBehaviour
 
     private void FixedUpdate() //Physics is fixed
     {
-        //is the player grounded?
-        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-        snailed = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsSnail);
         //get move direction
         float move = Input.GetAxis("Horizontal");
 
         //Add velocity to move controls
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move * topSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(move * PLAYER.TOP_SPEED, GetComponent<Rigidbody2D>().velocity.y);
 
-        if (move > 0 && !facingRight)
+        if (move > 0 && !playerFacingRight)
             Flip();
-        else if (move < 0 && facingRight)
+        else if (move < 0 && playerFacingRight)
             Flip();
     }
 
@@ -66,21 +63,25 @@ public class Move : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (grounded)
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
-            else if (snailed)
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce * 1.6f));
+            if (playerOnGround)
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, PLAYER.JUMP_FORCE));
+                playerOnGround = false;
+            }
+            else if (playerOnSnail)
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, PLAYER.JUMP_FORCE * PLAYER.SNAIL_JUMP_BONUS));
+                playerOnSnail = false;
+            }
         }
     }
 
     void Flip()
     {
-        facingRight = !facingRight;
-
+        playerFacingRight = !playerFacingRight;
         Vector3 theScale = transform.localScale;
 
         theScale.x *= -1;
-
         transform.localScale = theScale;
     }
 }
