@@ -26,23 +26,19 @@ public class Move : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collider)
     {
-        if (collision.gameObject.tag == LEVEL_CONST.GROUND_TAG)
+
+        if (collider.gameObject.tag == LEVEL_CONST.GROUND_TAG)
         {
             playerOnGround = true;
             playerOnSnail = false;
         }
-        else if (collision.gameObject.tag == ENEMY_CONST.SNAIL_TAG)
+        else if (collider.gameObject.tag == ENEMY_CONST.SNAIL_TAG)
         {
             playerOnGround = false;
             playerOnSnail = true;
         }
-    }
-    private void Start()
-    {
-        //Ignores below water layer
-        Physics2D.IgnoreLayerCollision(10, 9);
     }
 
     private void FixedUpdate() //Physics is fixed
@@ -84,4 +80,6 @@ public class Move : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
+
 }

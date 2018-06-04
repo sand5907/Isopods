@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isopods", "Isopods.csproj", "{72E9C6E5-5A38-AF23-F74B-23DD96D60E52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isopods.Editor", "Isopods.Editor.csproj", "{1C8FCB7C-13D3-12F0-7DAD-8AD4ECCE81E3}"

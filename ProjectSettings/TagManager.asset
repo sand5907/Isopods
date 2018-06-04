@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Ground
   - Flag
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - Water
+  - Isopods
   - 
   - 
   - 
