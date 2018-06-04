@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -610,6 +610,22 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1025500877778812, guid: 710d87f6c8ce20647a7a457e2db49693, type: 2}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886445006048198, guid: 710d87f6c8ce20647a7a457e2db49693, type: 2}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542914393769572, guid: 710d87f6c8ce20647a7a457e2db49693, type: 2}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655321232151492, guid: 710d87f6c8ce20647a7a457e2db49693, type: 2}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 710d87f6c8ce20647a7a457e2db49693, type: 2}
   m_IsPrefabParent: 0
@@ -688,6 +704,10 @@ Prefab:
     - target: {fileID: 1096987253738828, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
       propertyPath: m_Name
       value: Snail (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096987253738828, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
+      propertyPath: m_TagString
+      value: Snail
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
@@ -853,6 +873,10 @@ Prefab:
     - target: {fileID: 1096987253738828, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
       propertyPath: m_Name
       value: Snail (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096987253738828, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
+      propertyPath: m_TagString
+      value: Snail
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
@@ -1359,6 +1383,10 @@ Prefab:
     - target: {fileID: 1096987253738828, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
       propertyPath: m_Name
       value: Snail (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096987253738828, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
+      propertyPath: m_TagString
+      value: Snail
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
@@ -1967,6 +1995,10 @@ Prefab:
     - target: {fileID: 4413667795292476, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096987253738828, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
+      propertyPath: m_TagString
+      value: Snail
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7316e0f9ad8772b4aa29e4d86d928508, type: 2}
