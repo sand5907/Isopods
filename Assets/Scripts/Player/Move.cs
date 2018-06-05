@@ -1,10 +1,11 @@
 using Isopods.Constants;
+using Isopods.Interfaces;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 using PLAYER = Isopods.Constants.PLAYER_CONST;
 
-public class Move : MonoBehaviour
+public class Move : MonoBehaviour, IDamageable
 {
     //direction
     private bool playerFacingRight = true;
@@ -16,7 +17,10 @@ public class Move : MonoBehaviour
 
     private bool playerOnGround = false;
     private bool playerOnSnail = false;
+    public float _health = PLAYER.MAX_HEALTH;
 
+
+    public float health { get { return _health; } set { _health = value; } }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -81,5 +85,14 @@ public class Move : MonoBehaviour
         transform.localScale = theScale;
     }
 
+    public void TakeDamage(float damageTaken)
+    {
+        damageTaken = (damageTaken <= 0.0f) ? 0.0f : damageTaken;
+        health -= damageTaken;
 
+        if (health <= 0.0f)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
 }

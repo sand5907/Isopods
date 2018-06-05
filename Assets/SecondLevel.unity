@@ -170,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topSpeed: 5
   facingRight: 1
+  _health: 100
 --- !u!58 &214192732
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1403,6 +1404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120744905}
   - component: {fileID: 1120744906}
+  - component: {fileID: 1120744907}
   m_Layer: 8
   m_Name: DeathCollision
   m_TagString: Untagged
@@ -1452,6 +1454,17 @@ PolygonCollider2D:
       - {x: 10439.69, y: -71.72241}
       - {x: 0.58778536, y: -0.80901694}
       - {x: 0.9510565, y: 0.30901712}
+--- !u!114 &1120744907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1120744904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219151353be878c4cbcaa43969346c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1182653435 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4413667795292476, guid: 7316e0f9ad8772b4aa29e4d86d928508,

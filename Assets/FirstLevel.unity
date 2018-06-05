@@ -321,6 +321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topSpeed: 5
   facingRight: 1
+  _health: 100
 --- !u!1 &25578189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,6 +2610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526490617}
   - component: {fileID: 1526490618}
+  - component: {fileID: 1526490619}
   m_Layer: 8
   m_Name: DeathCollision
   m_TagString: Untagged
@@ -2638,7 +2640,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2653,13 +2655,24 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 10249.944, y: 313.52954}
+    - - {x: 11310.742, y: 322.7539}
       - {x: 10257.497, y: 37.710613}
       - {x: -0.95105654, y: 0.30901697}
       - {x: -0.5877852, y: -0.80901706}
       - {x: 0.58778536, y: -0.80901694}
-      - {x: -639.017, y: -3.8907795}
-      - {x: -594.508, y: 383.1039}
+      - {x: -2557.572, y: -21.70996}
+      - {x: -2546.698, y: 327.04297}
+--- !u!114 &1526490619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526490616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219151353be878c4cbcaa43969346c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1619351768
 GameObject:
   m_ObjectHideFlags: 0

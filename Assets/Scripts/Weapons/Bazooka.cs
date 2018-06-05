@@ -4,7 +4,6 @@ using UnityEngine;
 
 using BAZOOKA = Isopods.Constants.WEAPON_CONST.BAZOOKA_CONSTANTS;
 
-
 public class Bazooka : MonoBehaviour, ILaunchable
 {
     [Range(1.0f, 20.0f)]

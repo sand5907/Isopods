@@ -5,16 +5,18 @@ namespace Isopods.Constants
     public static class PLAYER_CONST
     {
         public const string PLAYER_TAG = "Player";
-        public const float JUMP_FORCE = 4000f;
+        public const float JUMP_FORCE = 5000f;
         public const float TOP_SPEED = 5.0f;
         public const float SNAIL_JUMP_BONUS = 1.6f;
+        public const float MAX_HEALTH = 100.0f;
     }
 
     public static class ENEMY_CONST
     {
-        public const float DEFAULT_ENEMY_HEALTH = 50.0f;
+        public const float DEFAULT_ENEMY_HEALTH = 25.0f;
         public const string ENEMY_TAG = "Enemy";
         public const string SNAIL_TAG = "Snail";
+        public const float DEFAULT_COLLISION_DAMAGE = 10.0f;
     }
 
     public static class WEAPON_CONST

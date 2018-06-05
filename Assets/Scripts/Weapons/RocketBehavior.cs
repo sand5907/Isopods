@@ -1,4 +1,5 @@
 ﻿using Isopods.Interfaces;
+using Isopods.Constants;
 using ROCKET = Isopods.Constants.WEAPON_CONST.ROCKET_CONSTANTS;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public class RocketBehavior : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.GetComponent<IDamageable>() != null)
+        if(other.gameObject.GetComponent<IDamageable>() != null && other.gameObject.tag != PLAYER_CONST.PLAYER_TAG)
         {
             Destroy(gameObject);
             other.GetComponent<IDamageable>().TakeDamage(ROCKET.DEFAULT_ROCKET_DAMAGE);
