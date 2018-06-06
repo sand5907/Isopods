@@ -39,6 +39,7 @@ namespace Isopods.Constants
 
     public static class LEVEL_CONST
     {
+        public const string FOLLOWERS_TAG = "Followers";
         public const string GROUND_TAG = "Ground";
         public const string END_LEVEL_FLAG_TAG = "Flag";
         public const string WATER_TAG = "Water";

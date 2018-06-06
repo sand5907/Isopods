@@ -8,7 +8,7 @@ public class Ignore_Collision : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collider)
     {
-        if (collider.gameObject.tag == LEVEL.WATER_TAG)
+        if (collider.gameObject.tag == LEVEL.WATER_TAG || collider.gameObject.tag == LEVEL.FOLLOWERS_TAG)
             Physics2D.IgnoreCollision(collider.collider, GetComponent<Collider2D>());
     }
 }

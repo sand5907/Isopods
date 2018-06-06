@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveBackAndForth : MonoBehaviour
 {
-
     public float min = 2f;
     public float max = 3f;
     // Use this for initialization

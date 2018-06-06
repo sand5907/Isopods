@@ -6,22 +6,25 @@ using System.Collections;
 
 public class NPC_Dialogue : MonoBehaviour
 {
+    public GameObject Canvas_Text;
     private Text message;
+    public string Output_Text;
+    private float Time_Delay = 2f;
 
     public static bool onHold = false;
 
     void Start()
     {
-        message = GameObject.Find("Message").GetComponent<Text>();
+        message = Canvas_Text.GetComponent<Text>();
 
-        // message.text = "";
+        message.text = "";
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            message.text = "I better get going now...";
+            message.text = Output_Text;
 
             StartCoroutine(ShortPause());
         }
@@ -30,7 +33,7 @@ public class NPC_Dialogue : MonoBehaviour
     IEnumerator ShortPause()
     {
         onHold = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(Time_Delay);
         onHold = false;
         message.text = "";
         Destroy(this);

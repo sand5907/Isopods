@@ -2,23 +2,22 @@ using Isopods.Constants;
 using Isopods.Interfaces;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 using PLAYER = Isopods.Constants.PLAYER_CONST;
 
 public class Move : MonoBehaviour, IDamageable
 {
-    //direction
-    private bool playerFacingRight = true;
     //Movement speed
     public float topSpeed = 10f;
-
-    //direction
-    public bool facingRight = true;
 
     private bool playerOnGround = false;
     private bool playerOnSnail = false;
     public float _health = PLAYER.MAX_HEALTH;
+    private bool heal = true;
 
+    public GameObject Canvas_Text;
+    private Text message;
 
     public float health { get { return _health; } set { _health = value; } }
 
@@ -47,21 +46,29 @@ public class Move : MonoBehaviour, IDamageable
 
     private void FixedUpdate() //Physics is fixed
     {
+        message = Canvas_Text.GetComponent<Text>();
+        message.text = health.ToString();
+
         //get move direction
         float move = Input.GetAxis("Horizontal");
 
         //Add velocity to move controls
         GetComponent<Rigidbody2D>().velocity = new Vector2(move * PLAYER.TOP_SPEED, GetComponent<Rigidbody2D>().velocity.y);
-
-        if (move > 0 && !playerFacingRight)
-            Flip();
-        else if (move < 0 && playerFacingRight)
-            Flip();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (heal && Input.GetKeyDown(KeyCode.E))
+        {
+            health = 100;
+            heal = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene(0);
+
+            if (Input.GetKeyDown(KeyCode.Space))
         {
             if (playerOnGround)
             {
@@ -74,15 +81,6 @@ public class Move : MonoBehaviour, IDamageable
                 playerOnSnail = false;
             }
         }
-    }
-
-    void Flip()
-    {
-        playerFacingRight = !playerFacingRight;
-        Vector3 theScale = transform.localScale;
-
-        theScale.x *= -1;
-        transform.localScale = theScale;
     }
 
     public void TakeDamage(float damageTaken)
