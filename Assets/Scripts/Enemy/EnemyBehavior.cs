@@ -2,32 +2,57 @@
 using UnityEngine;
 using Isopods.Constants;
 using ENEMY = Isopods.Constants.ENEMY_CONST;
+using PROJECTILE = Isopods.Constants.WEAPON_CONST.ENEMY_PROJECTILE_CONSTANTS;
+using System.Collections;
 
-public class EnemyBehavior : MonoBehaviour, IDamageable
+public class EnemyBehavior : MonoBehaviour, IDamageable, ILaunchable
 {
     public float rotationSpeed = 5.0f;
     private Transform target;
 
     [SerializeField]
-    private float _health;
+    private float _health = ENEMY.DEFAULT_ENEMY_HEALTH;
     public float health { get { return _health; } private set { _health = value; } }
 
-    
-    // Use this for initialization
+    public int ammo { get; set; }
+
+    public float timeBetweenShots { get { return PROJECTILE.ENEMY_PROJECTILE_TIME_BETWEEN_SHOTS; } set { timeBetweenShots = value; } }
+
+    public float reloadTime { get; set; }
+
+    public bool reloading { get; set; }
+
+    [SerializeField]
+    private GameObject _projectile;
+    public GameObject projectile { get { return _projectile; } }
+
+    [SerializeField]
+    private float _projectileSpeed = PROJECTILE.ENEMY_PROJECTILE_SPEED;
+    public float projectileSpeed { get { return _projectileSpeed; } set { _projectileSpeed = value; } }
+
+    private Vector2 direction;
+    private Quaternion rotation;
+    private float _shotTimeDelay = 0.0f;
+
+
     void Start ()
-    {
-        health = ENEMY.DEFAULT_ENEMY_HEALTH;
+    { 
         target = GameObject.FindGameObjectWithTag(PLAYER_CONST.PLAYER_TAG).transform;
     }
 	
-	// Update is called once per frame
 	void Update ()
     {
-        Vector2 direction = target.position - transform.position;
+        direction = target.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
-        Debug.Log(GameController.score);
+
+        if(Vector2.Distance(target.position, transform.position) <= 10.0f && _shotTimeDelay <= 0.0f)
+        {
+            Shoot();
+            _shotTimeDelay = timeBetweenShots;
+        }
+        _shotTimeDelay -= Time.deltaTime;
     }
 
     public void TakeDamage(float damageTaken)
@@ -47,5 +72,16 @@ public class EnemyBehavior : MonoBehaviour, IDamageable
         {
             collision.gameObject.GetComponent<IDamageable>().TakeDamage(ENEMY.DEFAULT_COLLISION_DAMAGE);
         }
+    }
+
+    public void Shoot()
+    { 
+            var enemyProjectile = Instantiate(projectile, gameObject.transform.position, rotation);
+            enemyProjectile.GetComponent<Rigidbody2D>().AddForce((target.position - transform.position) * projectileSpeed);
+    }
+
+    public IEnumerator Reload()
+    {
+        throw new System.NotImplementedException();
     }
 }

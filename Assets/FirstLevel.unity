@@ -398,6 +398,10 @@ Prefab:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 1674329814016712, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78c60290bcdc23546a28c8b8ea6e7374, type: 2}
   m_IsPrefabParent: 0
@@ -438,6 +442,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   _health: 0
+  _projectile: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+    type: 2}
+  _projectileSpeed: 50
 --- !u!212 &271746524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -986,6 +993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   _health: 0
+  _projectile: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+    type: 2}
+  _projectileSpeed: 50
 --- !u!212 &575494434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1272,6 +1282,17 @@ Prefab:
       propertyPath: m_Name
       value: FirstFlypillar
       objectReference: {fileID: 0}
+    - target: {fileID: 114528508183476012, guid: 9d6cdef44800966439c8877c0052dab6,
+        type: 2}
+      propertyPath: _projectile
+      value: 
+      objectReference: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+        type: 2}
+    - target: {fileID: 114528508183476012, guid: 9d6cdef44800966439c8877c0052dab6,
+        type: 2}
+      propertyPath: _projectileSpeed
+      value: 75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d6cdef44800966439c8877c0052dab6, type: 2}
   m_IsPrefabParent: 0
@@ -1529,6 +1550,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   _health: 0
+  _projectile: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+    type: 2}
+  _projectileSpeed: 50
 --- !u!212 &1078125370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1866,6 +1890,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   _health: 0
+  _projectile: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+    type: 2}
+  _projectileSpeed: 50
 --- !u!212 &1337276813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1993,6 +2020,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   _health: 0
+  _projectile: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+    type: 2}
+  _projectileSpeed: 50
 --- !u!212 &1365756741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2402,6 +2432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   _health: 0
+  _projectile: {fileID: 0}
+  _projectileSpeed: 50
 --- !u!212 &1727130210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2632,6 +2664,17 @@ Prefab:
     - target: {fileID: 4276333307554714, guid: 9d6cdef44800966439c8877c0052dab6, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114528508183476012, guid: 9d6cdef44800966439c8877c0052dab6,
+        type: 2}
+      propertyPath: _projectile
+      value: 
+      objectReference: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+        type: 2}
+    - target: {fileID: 114528508183476012, guid: 9d6cdef44800966439c8877c0052dab6,
+        type: 2}
+      propertyPath: _projectileSpeed
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d6cdef44800966439c8877c0052dab6, type: 2}
@@ -3002,6 +3045,17 @@ Prefab:
     - target: {fileID: 1576469921173688, guid: 9d6cdef44800966439c8877c0052dab6, type: 2}
       propertyPath: m_Name
       value: FlyPillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114528508183476012, guid: 9d6cdef44800966439c8877c0052dab6,
+        type: 2}
+      propertyPath: _projectile
+      value: 
+      objectReference: {fileID: 1808794522510822, guid: f411419f32df56d4caae7fc2e7b593bb,
+        type: 2}
+    - target: {fileID: 114528508183476012, guid: 9d6cdef44800966439c8877c0052dab6,
+        type: 2}
+      propertyPath: _projectileSpeed
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d6cdef44800966439c8877c0052dab6, type: 2}

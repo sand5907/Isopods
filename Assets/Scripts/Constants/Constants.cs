@@ -35,6 +35,13 @@ namespace Isopods.Constants
             public const string ROCKET_TAG = "Rocket";
             public const float ROCKET_TIME_TO_LIVE = 3.0f;
         }
+        public static class ENEMY_PROJECTILE_CONSTANTS
+        {
+            public const float TIME_TO_LIVE = 5.0f;
+            public const float ENEMY_PROJECTILE_DAMAGE = 10.0f;
+            public const float ENEMY_PROJECTILE_SPEED = 50.0f;
+            public const float ENEMY_PROJECTILE_TIME_BETWEEN_SHOTS = 3.0f;
+        }
     }
 
     public static class LEVEL_CONST

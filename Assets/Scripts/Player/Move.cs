@@ -69,18 +69,18 @@ public class Move : MonoBehaviour, IDamageable
             SceneManager.LoadScene(0);
 
             if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (playerOnGround)
             {
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, PLAYER.JUMP_FORCE));
-                playerOnGround = false;
+                if (playerOnGround)
+                {
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, PLAYER.JUMP_FORCE));
+                    playerOnGround = false;
+                }
+                else if (playerOnSnail)
+                {
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, PLAYER.JUMP_FORCE * PLAYER.SNAIL_JUMP_BONUS));
+                    playerOnSnail = false;
+                }
             }
-            else if (playerOnSnail)
-            {
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, PLAYER.JUMP_FORCE * PLAYER.SNAIL_JUMP_BONUS));
-                playerOnSnail = false;
-            }
-        }
     }
 
     public void TakeDamage(float damageTaken)
